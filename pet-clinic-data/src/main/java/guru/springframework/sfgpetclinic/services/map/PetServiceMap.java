@@ -9,9 +9,4 @@ import org.springframework.stereotype.Service;
 @Service
 public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetService {
 
-
-    @Override
-    public Pet save(Pet obj) {
-        return this.save(obj.getId(),obj);
-    }
 }
