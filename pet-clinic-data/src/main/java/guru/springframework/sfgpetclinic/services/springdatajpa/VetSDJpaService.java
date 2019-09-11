@@ -13,11 +13,11 @@ import java.util.Set;
 
 @Service
 @Profile("springdatajpa")
-public class VetServiceSDJpaService implements VetService {
+public class VetSDJpaService implements VetService {
 
     private final VetRepository vetRepository;
     @Autowired
-    public VetServiceSDJpaService(VetRepository vetRepository) {
+    public VetSDJpaService(VetRepository vetRepository) {
         this.vetRepository = vetRepository;
     }
 
