@@ -82,6 +82,7 @@ public class DataLoader implements CommandLineRunner {
         tahaPet.setPetType(savedCatPetType);
         tahaPet.setName("kitty");
         tahaPet.setBirthDate(LocalDate.now());
+        tahaPet.setOwner(owner2);
         owner2.getPets().add(tahaPet);
         ownerService.save(owner2);
         Visit catVisit = new Visit();
